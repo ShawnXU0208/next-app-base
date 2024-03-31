@@ -1,0 +1,17 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser", // required because eslint default parser is for parsing javascript
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+        "eslint:recommended",
+        "next/core-web-vitals", // https://nextjs.org/docs/app/building-your-application/configuring/eslint#core-web-vitals
+        "plugin:@typescript-eslint/strict-type-checked", // https://typescript-eslint.io/users/configs/#stylistic-type-checked
+        "plugin:@typescript-eslint/stylistic-type-checked", // https://typescript-eslint.io/users/configs/#stylistic-type-checked
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["@typescript-eslint"]
+}
